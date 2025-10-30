@@ -1,5 +1,4 @@
-
-vim.lsp.config['lua_ls'] = {
+return{
   -- Command and arguments to start the server.
   cmd = { 'lua-language-server' },
   -- Filetypes to automatically attach to.
@@ -14,9 +13,10 @@ vim.lsp.config['lua_ls'] = {
     Lua = {
       runtime = {
         version = 'LuaJIT',
+      },
+      diagnostics = {
+          globals = {'vim'}
       }
     }
   }
 }
-
-
