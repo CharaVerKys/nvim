@@ -1,4 +1,5 @@
 vim.lsp.enable("lua_ls"); -- search in /lsp/*
+vim.lsp.enable("clangd"); -- search in /lsp/*
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
