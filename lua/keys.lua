@@ -20,7 +20,7 @@ vim.keymap.set("n","<Space>L","<C-w>15>");
 
 
 vim.keymap.set("n","<Space>t",":tabnew ");
-vim.keymap.set("n","<Space>c","gt");
+vim.keymap.set("n","<Space>n","gt"); --lol, i bound it and forgot to use
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "netrw",
